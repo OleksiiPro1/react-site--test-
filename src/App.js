@@ -4,11 +4,23 @@ import { useState } from 'react';
 
 function RadomEmoji(){
   const [emoji, setEmoji] = useState(nodeEmoji.random().emoji);
+  const [emojiName, setEmojiName] = useState('');
   return(
   <div>
    <button onClick={() => setEmoji(nodeEmoji.random().emoji)}>Random</button>
    <br />
    Emoji: {emoji}
+   <br/>
+    <input
+    value={emojiName}
+    onChange={(event) => setEmojiName(event.currentTarget.value)
+    }
+    />
+    <br/>
+    {nodeEmoji.hasEmoji(emojiName)
+    ? nodeEmoji.get(emojiName)
+    : 'Emoji not found'}
+
   </div>
 )
 }

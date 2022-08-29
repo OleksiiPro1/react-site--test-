@@ -1,10 +1,13 @@
 import './App.css';
 import nodeEmoji from 'node-emoji';
 import { useState } from 'react';
+import MapOverArrays from './MapOverArrays';
+import ShowAndDistruct from './ShowAndDistruct';
+import StateIsAsync from './StateIsAsync';
 
 function RadomEmoji(){
   const [emoji, setEmoji] = useState(nodeEmoji.random().emoji);
-  const [emojiName, setEmojiName] = useState('');
+  const [emojiName, setEmojiName] = useState('smile');
   return(
   <div>
    <button onClick={() => setEmoji(nodeEmoji.random().emoji)}>Random</button>
@@ -108,7 +111,12 @@ Counter
 <br />
 < RadomEmoji />
 <br />
-
+<StateIsAsync />
+<br />
+<ShowAndDistruct />
+<br />
+<MapOverArrays />
+<br />
       </header>
     </div>
   );

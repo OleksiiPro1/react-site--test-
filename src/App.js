@@ -1,6 +1,7 @@
 import './App.css';
 import nodeEmoji from 'node-emoji';
 import { useState } from 'react';
+import MyComponent from './Components';
 import MapOverArrays from './MapOverArrays';
 import ShowAndDistruct from './ShowAndDistruct';
 import StateIsAsync from './StateIsAsync';
@@ -111,12 +112,16 @@ Counter
 <br />
 < RadomEmoji />
 <br />
+<h1>State is Async</h1>
 <StateIsAsync />
 <br />
 <ShowAndDistruct />
 <br />
 <MapOverArrays />
 <br />
+<h1>Components</h1>
+<MyComponent />
+<br /><br /><br /><br /><br /><br />
       </header>
     </div>
   );

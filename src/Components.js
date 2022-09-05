@@ -2,10 +2,11 @@ import { css } from '@emotion/react';
 /** @jsxImportSource @emotion/react */
 import { useState } from 'react';
 
-const mainStyles = css`
-color: green;
+const divStyles = (changeColor) => css`
+color: ${changeColor ? 'green' : 'yellow'};
 `;
 export default function MyComponent() {
+  const [changeColor, setChangeColor] = useState(false);
   const [inputName, setInputName] = useState('');
   return(
   <div style={{color: 'red'}}>
@@ -21,7 +22,8 @@ export default function MyComponent() {
       </button>
     </label>
   </form>
-  <div css={mainStyles}><h2>1111111111111111</h2></div>
+  <div css={divStyles(changeColor)}><h2>CSS IN REACT</h2></div>
+  <button onClick={() => {setChangeColor(!changeColor)}}>Change color</button>
   </div>
   );
 }

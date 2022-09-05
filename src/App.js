@@ -86,7 +86,7 @@ function Greeting(props){
 function App() {
   const user = {
     name: 'Alexey',
-    url: 'https://media-exp1.licdn.com/dms/image/D5635AQH1hDp1JI0dZg/profile-framedphoto-shrink_200_200/0/1657614321779?e=1662123600&v=beta&t=IqliGha2k77ri4zqWg-2wu8j4pQWnmkBprUuIgWGDgw'
+    url: 'https://media-exp1.licdn.com/dms/image/D5635AQH1hDp1JI0dZg/profile-framedphoto-shrink_200_200/0/1657614321779?e=1662714000&v=beta&t=75RbWl0BrbDu5g_HMVdziKAXmrz8f9O2s4JIrGT3f28'
   }
   return (
 

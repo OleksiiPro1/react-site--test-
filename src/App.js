@@ -3,6 +3,7 @@ import './App.css';
 // import { css } from '@emotion/react';
 import nodeEmoji from 'node-emoji';
 import { useState } from 'react';
+import ChildrenPropExample from './ChildernPropExample';
 import MyComponent from './Components';
 import MapOverArrays from './MapOverArrays';
 import ShowAndDistruct from './ShowAndDistruct';
@@ -123,6 +124,8 @@ Counter
 <br />
 <h1>Components</h1>
 <MyComponent />
+<br /><br />
+<ChildrenPropExample />
 <br /><br /><br /><br /><br /><br />
       </header>
     </div>
